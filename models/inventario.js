@@ -4,13 +4,11 @@ const InventarioSchema = Schema({
     serial: {
         type: String,
         required: [true, 'Serial Requerido'],
-        unique: true
+        unique: [true, "Equipo en Uso"]
     },
     modelo: {
         type: String,
-        default: true,
-        required: [true, 'Modelo Requerido'],
-        unique: true
+        required: [true, 'Modelo Requerido']
     },
     descripcion:{
         type: String
