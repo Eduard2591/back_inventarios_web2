@@ -200,7 +200,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/estados?estado=false",
+							"raw": "localhost:3000/api/estados?estado=true",
 							"host": [
 								"localhost"
 							],
@@ -212,7 +212,7 @@
 							"query": [
 								{
 									"key": "estado",
-									"value": "false"
+									"value": "true"
 								}
 							]
 						}
@@ -336,7 +336,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/marcas?estado=false",
+							"raw": "localhost:3000/api/marcas?estado=true",
 							"host": [
 								"localhost"
 							],
@@ -348,7 +348,7 @@
 							"query": [
 								{
 									"key": "estado",
-									"value": "false"
+									"value": "true"
 								}
 							]
 						}
@@ -430,6 +430,34 @@
 			"name": "Inventario",
 			"item": [
 				{
+					"name": "Crear Inventario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial\": \"111-222-12434\",\r\n    \"modelo\": \"2022\",\r\n    \"descripcion\": \"\",\r\n    \"foto\": \"\",\r\n    \"color\": \"\",\r\n    \"fechaCompra\": \"2022-04-01\",\r\n    \"precio\": \"300\",\r\n    \"usuario\": {\r\n        \"_id\": \"632f75a2ed8078dfdb7416d3\"\r\n    },\r\n    \"marca\": {\r\n        \"_id\": \"632f33a344360f356d75907623\"\r\n    },\r\n    \"estado\": {\r\n        \"_id\": \"632f301c9cf43231a009243834\"\r\n    },\r\n    \"tipoEquipo\": {\r\n        \"_id\": \"632f2d2d5fe687a9d6d2c82212\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/inventarios",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"inventarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "Consultar Inventario",
 					"request": {
 						"method": "GET",
@@ -449,9 +477,25 @@
 					"response": []
 				},
 				{
-					"name": "Crear Inventario",
+					"name": "Consultat Inventario por ID",
 					"request": {
-						"method": "POST",
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Inventario por ID",
+					"request": {
+						"method": "PUT",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Inventario por ID",
+					"request": {
+						"method": "DELETE",
 						"header": []
 					},
 					"response": []
@@ -491,9 +535,21 @@
 				},
 				{
 					"name": "Consultar Todos los Usuarios",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
 						"url": {
 							"raw": "localhost:3000/api/usuarios?estado=true",
 							"host": [
@@ -567,7 +623,19 @@
 					"name": "Borrar Usuario por ID",
 					"request": {
 						"method": "DELETE",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/usuarios/632f593901bb41e0fb43abf4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuarios",
+								"632f593901bb41e0fb43abf4"
+							]
+						}
 					},
 					"response": []
 				}

@@ -96,17 +96,19 @@ const updateInventarioByID = async (req = request, res = response) => {
 }
 
 //borra Inventario por ID
-const deleteInventarioByID = async (req = request, 
-    res = response) => {
-
-    try{
-        const { id } = req.params
-        const data = req.body
-        await Inventario.findByIdAndDelete(id, data, {new: true})
+const deleteInventarioByID = async (req = request, res = response) => {
+    try {
+        console.log(req.params)
+        const id = req.params.id
+        const inventarioBD = await Inventario.findById(id)
+        if(!inventarioBD){
+            return res.status(404).json({msg: 'No existe el estado'})
+        }
+        await Inventario.findByIdAndDelete(id)
         return res.status(204).json({})
     }catch(e){
-        console.log(e)
-        return res.status(500).json({msj: 'Error'}) 
+        console.log(e);
+        return res.status(500).json({msg: e})
     }
 }
 
