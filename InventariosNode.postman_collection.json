@@ -27,13 +27,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos",
+							"raw": "{{url}}/tipoequipos",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"tipoequipos"
 							]
 						}
@@ -46,19 +44,17 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos?estado=true",
+							"raw": "{{url}}/tipoequipos?estado=false",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"tipoequipos"
 							],
 							"query": [
 								{
 									"key": "estado",
-									"value": "true"
+									"value": "false"
 								}
 							]
 						}
@@ -83,15 +79,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos/632f2d365fe687a9d6d2c825",
+							"raw": "{{url}}/tipoequipos/6330bea70dbcefcc709be855",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"tipoequipos",
-								"632f2d365fe687a9d6d2c825"
+								"6330bea70dbcefcc709be855"
 							]
 						}
 					},
@@ -104,7 +98,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Otro\",\r\n    \"estado\": false\r\n}",
+							"raw": "{\r\n    \"nombre\": \"OTROS\",\r\n    \"estado\": false\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -112,15 +106,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos/632f2d365fe687a9d6d2c825",
+							"raw": "{{url}}/tipoequipos/633cdf517080f718cd618a7c",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"tipoequipos",
-								"632f2d365fe687a9d6d2c825"
+								"633cdf517080f718cd618a7c"
 							]
 						}
 					},
@@ -134,25 +126,14 @@
 						},
 						"method": "DELETE",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "localhost:3000/api/tipoequipos/632f2d365fe687a9d6d2c825",
+							"raw": "{{url}}/tipoequipos/6330be9b0dbcefcc709be852",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"tipoequipos",
-								"632f2d365fe687a9d6d2c825"
+								"6330be9b0dbcefcc709be852"
 							]
 						}
 					},
@@ -181,13 +162,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/estados",
+							"raw": "{{url}}/estados",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"estados"
 							]
 						}
@@ -200,13 +179,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/estados?estado=true",
+							"raw": "{{url}}/estados?estado=true",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"estados"
 							],
 							"query": [
@@ -225,15 +202,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/estados/632f30c39cf43231a0092447",
+							"raw": "{{url}}/estados/6330bf6c0dbcefcc709be869",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"estados",
-								"632f30c39cf43231a0092447"
+								"6330bf6c0dbcefcc709be869"
 							]
 						}
 					},
@@ -254,15 +229,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/estados/632f30c39cf43231a0092447",
+							"raw": "{{url}}/estados/6330bf6c0dbcefcc709be869",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"estados",
-								"632f30c39cf43231a0092447"
+								"6330bf6c0dbcefcc709be869"
 							]
 						}
 					},
@@ -283,15 +256,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/estados/632f30c39cf43231a0092447",
+							"raw": "{{url}}/estados/6330bf6c0dbcefcc709be869",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"estados",
-								"632f30c39cf43231a0092447"
+								"6330bf6c0dbcefcc709be869"
 							]
 						}
 					},
@@ -309,7 +280,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"otro\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"xiaomi\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -317,13 +288,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/marcas",
+							"raw": "{{url}}/marcas",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"marcas"
 							]
 						}
@@ -336,13 +305,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/marcas?estado=true",
+							"raw": "{{url}}/marcas?estado=true",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"marcas"
 							],
 							"query": [
@@ -361,15 +328,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/marcas/632f33b044360f356d759079",
+							"raw": "{{url}}/marcas/6330c1bc0dbcefcc709be873",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"marcas",
-								"632f33b044360f356d759079"
+								"6330c1bc0dbcefcc709be873"
 							]
 						}
 					},
@@ -382,7 +347,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"lenovo\",\r\n    \"estado\": false\r\n}",
+							"raw": "{\r\n    \"estado\": false\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -390,15 +355,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/marcas/632f33b044360f356d759079",
+							"raw": "{{url}}/marcas/6330c1d10dbcefcc709be879",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"marcas",
-								"632f33b044360f356d759079"
+								"6330c1d10dbcefcc709be879"
 							]
 						}
 					},
@@ -410,15 +373,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/marcas/632f33b044360f356d759079",
+							"raw": "{{url}}/marcas/6330c1d10dbcefcc709be879",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"marcas",
-								"632f33b044360f356d759079"
+								"6330c1d10dbcefcc709be879"
 							]
 						}
 					},
@@ -436,7 +397,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"serial\": \"111-222-12434\",\r\n    \"modelo\": \"2022\",\r\n    \"descripcion\": \"\",\r\n    \"foto\": \"\",\r\n    \"color\": \"\",\r\n    \"fechaCompra\": \"2022-04-01\",\r\n    \"precio\": \"300\",\r\n    \"usuario\": {\r\n        \"_id\": \"632f75a2ed8078dfdb7416d3\"\r\n    },\r\n    \"marca\": {\r\n        \"_id\": \"632f33a344360f356d75907623\"\r\n    },\r\n    \"estado\": {\r\n        \"_id\": \"632f301c9cf43231a009243834\"\r\n    },\r\n    \"tipoEquipo\": {\r\n        \"_id\": \"632f2d2d5fe687a9d6d2c82212\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"serial\": \"111-222-12434\",\r\n    \"modelo\": \"2022\",\r\n    \"descripcion\": \"\",\r\n    \"foto\": \"\",\r\n    \"color\": \"\",\r\n    \"fechaCompra\": \"2022-04-01\",\r\n    \"precio\": \"300\",\r\n    \"usuario\": {\r\n        \"_id\": \"6330c2310dbcefcc709be883\"\r\n    },\r\n    \"marca\": {\r\n        \"_id\": \"6330c1c30dbcefcc709be876\"\r\n    },\r\n    \"estado\": {\r\n        \"_id\": \"6330bf580dbcefcc709be863\"\r\n    },\r\n    \"tipoEquipo\": {\r\n        \"_id\": \"6330c3270dbcefcc709be892\"\r\n    }\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -444,13 +405,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/inventarios",
+							"raw": "{{url}}/inventarios",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"inventarios"
 							]
 						}
@@ -463,14 +422,18 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/inventarios",
+							"raw": "{{url}}/inventarios?estado=true",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"inventarios"
+							],
+							"query": [
+								{
+									"key": "estado",
+									"value": "true"
+								}
 							]
 						}
 					},
@@ -480,7 +443,17 @@
 					"name": "Consultat Inventario por ID",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{url}}/inventarios/6330c3370dbcefcc709be896",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"inventarios",
+								"6330c3370dbcefcc709be896"
+							]
+						}
 					},
 					"response": []
 				},
@@ -488,7 +461,26 @@
 					"name": "Actualizar Inventario por ID",
 					"request": {
 						"method": "PUT",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"modelo\": \"2021\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/inventarios/6330c3370dbcefcc709be896",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"inventarios",
+								"6330c3370dbcefcc709be896"
+							]
+						}
 					},
 					"response": []
 				},
@@ -496,7 +488,68 @@
 					"name": "Borrar Inventario por ID",
 					"request": {
 						"method": "DELETE",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "{{url}}/inventarios/6330c3370dbcefcc709be896",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"inventarios",
+								"6330c3370dbcefcc709be896"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Foto",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "foto",
+									"type": "file",
+									"src": "/C:/Users/patru/Downloads/ConsumoApi_46/ConsumoApi_46/app/src/main/res/drawable/macbook.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/inventarios/633cdfc57080f718cd618a87/images",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"inventarios",
+								"633cdfc57080f718cd618a87",
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar Foto por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/inventarios/633cdfc57080f718cd618a87/images",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"inventarios",
+								"633cdfc57080f718cd618a87",
+								"images"
+							]
+						}
 					},
 					"response": []
 				}
@@ -512,7 +565,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Eduard Paez\",\r\n    \"email\": \"eduard123@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Monica Perez\",\r\n    \"email\": \"Monica147@gmail.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -520,13 +573,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/usuarios",
+							"raw": "{{url}}/usuarios",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"usuarios"
 							]
 						}
@@ -551,13 +602,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/usuarios?estado=true",
+							"raw": "{{url}}/usuarios?estado=true",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"usuarios"
 							],
 							"query": [
@@ -576,15 +625,13 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/usuarios/632f593901bb41e0fb43abf4",
+							"raw": "{{url}}/usuarios/6330c2410dbcefcc709be886",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"usuarios",
-								"632f593901bb41e0fb43abf4"
+								"6330c2410dbcefcc709be886"
 							]
 						}
 					},
@@ -597,7 +644,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nombre\": \"Eduard Andres Paez\"\r\n}",
+							"raw": "{\r\n    \"nombre\": \"Marcela Perez\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -605,15 +652,13 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:3000/api/usuarios/632f593901bb41e0fb43abf4",
+							"raw": "{{url}}/usuarios/6330c2410dbcefcc709be886",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"usuarios",
-								"632f593901bb41e0fb43abf4"
+								"6330c2410dbcefcc709be886"
 							]
 						}
 					},
@@ -625,15 +670,13 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:3000/api/usuarios/632f593901bb41e0fb43abf4",
+							"raw": "{{url}}/usuarios/6330c2410dbcefcc709be886",
 							"host": [
-								"localhost"
+								"{{url}}"
 							],
-							"port": "3000",
 							"path": [
-								"api",
 								"usuarios",
-								"632f593901bb41e0fb43abf4"
+								"6330c2410dbcefcc709be886"
 							]
 						}
 					},
