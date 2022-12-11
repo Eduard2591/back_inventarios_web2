@@ -3,7 +3,7 @@ const { Schema, model } = require("mongoose");
 const EstadoSchema = Schema({
     nombre: {
         type: String,
-        required: [true, 'Nombre Equipo Requerido']
+        required: [true, 'Nombre Estado Requerido']
     },
     estado: {
         type: Boolean,

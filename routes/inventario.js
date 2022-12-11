@@ -9,28 +9,30 @@ const {
     uploadImageByID,
     getImageByID
 } = require('../controllers/inventario')
+const validarJwt = require('../middlewares/validateJwt')
+const { isAdmin } = require('../middlewares/validateRol')
 
 const router = Router()
 
-router.get('/', getInventarios)
+router.get('/', validarJwt, getInventarios)
 
-router.post('/', createInventario)
+router.post('/', validarJwt, isAdmin, createInventario)
 
-router.get('/:id', getInventarioByID)
+router.get('/:id', validarJwt, getInventarioByID)
 
-router.put('/:id', updateInventarioByID)
+router.put('/:id', validarJwt, isAdmin, updateInventarioByID)
 
-router.delete('/:id', deleteInventarioByID)
+router.delete('/:id', validarJwt, isAdmin, deleteInventarioByID)
 
 /**
 * Sube foto de inventario
 */
-router.post('/:id/images', uploadImageByID);
+router.post('/:id/images', validarJwt, isAdmin, uploadImageByID);
 
 /**
 * get foto de inventario
 */
-router.get('/:id/images', getImageByID);
+router.get('/:id/images', validarJwt, getImageByID);
 
 
 module.exports = router

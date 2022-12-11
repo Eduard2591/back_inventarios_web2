@@ -6,22 +6,24 @@ const {
     updateEstadoByID,
     deleteEstadoByID
 } = require('../controllers/estado')
+const validarJwt = require('../middlewares/validateJwt')
+const { isAdmin } = require('../middlewares/validateRol')
 
 const router = Router();
 
 //crear estado de equipo
-router.post('/', createEstado)
+router.post('/', validarJwt, isAdmin, createEstado)
 
 //consulta estados de los equipo
-router.get('/', getEstados)
+router.get('/', validarJwt, getEstados)
 
 //consulta estado de equipo por ID
-router.get('/:id', getEstadoByID)
+router.get('/:id', validarJwt, getEstadoByID)
 
 //Actualiza tipo de equipo por ID
-router.put('/:id', updateEstadoByID)
+router.put('/:id', validarJwt, isAdmin, updateEstadoByID)
 
 //Elimina tipo de equipo por ID
-router.delete('/:id', deleteEstadoByID)
+router.delete('/:id', validarJwt, isAdmin, deleteEstadoByID)
 
 module.exports = router
